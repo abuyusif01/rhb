@@ -17,6 +17,7 @@ import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(child: AppointmentPage()),
       ),
@@ -33,6 +34,10 @@ class AppointmentPage extends StatefulWidget {
 
 class _AppointmentPage extends State<AppointmentPage> {
   bool isFinished = false;
+  bool _clicked = false;
+  bool _clicked2 = false;
+  bool _clicked3 = false;
+  bool _clicked4 = false;
   DateTime _dateTime = DateTime.now();
   TextEditingController nameController = TextEditingController();
   TextEditingController nameController2 = TextEditingController();
@@ -234,31 +239,17 @@ class _AppointmentPage extends State<AppointmentPage> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Container(
-                                                  width: 17.50,
-                                                  height: 13.41,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8),
-                                                    color: Color(0xff5e5e5e),
+                                                  width: 24,
+                                                  height: 24,
+                                                  child: Checkbox(
+                                                    value: _clicked,
+                                                    onChanged: (bool? value) {
+                                                      setState(() {
+                                                        _clicked = value!;
+                                                      });
+                                                    },
                                                   ),
                                                 ),
-                                              ),
-                                            ),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 24,
-                                                    height: 24,
-                                                    color: Colors.red,
-                                                  ),
-                                                ],
                                               ),
                                             ),
                                           ],
@@ -365,31 +356,17 @@ class _AppointmentPage extends State<AppointmentPage> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Container(
-                                                  width: 17.50,
-                                                  height: 13.41,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8),
-                                                    color: Color(0xff5e5e5e),
+                                                  width: 24,
+                                                  height: 24,
+                                                  child: Checkbox(
+                                                    value: _clicked2,
+                                                    onChanged: (bool? value) {
+                                                      setState(() {
+                                                        _clicked2 = value!;
+                                                      });
+                                                    },
                                                   ),
                                                 ),
-                                              ),
-                                            ),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 24,
-                                                    height: 24,
-                                                    color: Colors.yellow,
-                                                  ),
-                                                ],
                                               ),
                                             ),
                                           ],
@@ -496,31 +473,17 @@ class _AppointmentPage extends State<AppointmentPage> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Container(
-                                                  width: 17.50,
-                                                  height: 13.41,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8),
-                                                    color: Color(0xff5e5e5e),
+                                                  width: 24,
+                                                  height: 24,
+                                                  child: Checkbox(
+                                                    value: _clicked3,
+                                                    onChanged: (bool? value) {
+                                                      setState(() {
+                                                        _clicked3 = value!;
+                                                      });
+                                                    },
                                                   ),
                                                 ),
-                                              ),
-                                            ),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 24,
-                                                    height: 24,
-                                                    color: Colors.yellow,
-                                                  ),
-                                                ],
                                               ),
                                             ),
                                           ],
@@ -627,31 +590,17 @@ class _AppointmentPage extends State<AppointmentPage> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Container(
-                                                  width: 17.50,
-                                                  height: 13.41,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8),
-                                                    color: Color(0xff5e5e5e),
+                                                  width: 24,
+                                                  height: 24,
+                                                  child: Checkbox(
+                                                    value: _clicked4,
+                                                    onChanged: (bool? value) {
+                                                      setState(() {
+                                                        _clicked4 = value!;
+                                                      });
+                                                    },
                                                   ),
                                                 ),
-                                              ),
-                                            ),
-                                            Container(
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 24,
-                                                    height: 24,
-                                                    color: Colors.yellow,
-                                                  ),
-                                                ],
                                               ),
                                             ),
                                           ],

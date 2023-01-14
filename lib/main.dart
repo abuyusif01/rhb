@@ -17,6 +17,7 @@ void main() async {
 
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       home: const MainBar(),
       routes: {
