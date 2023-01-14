@@ -655,7 +655,7 @@ class _AppointmentPage extends State<AppointmentPage> {
 /////////////////////////////////////////////////////////////////////////////////
                   Padding(padding: EdgeInsets.only(top: 20)),
                   Divider(
-                    color: Color(0x496bcde6), //color of divider
+                    color: Color(0xdd225c88), //color of divider
                     height: 5, //height spacing of divider
                     thickness: 3, //thickness of divier line
                     indent: 25, //spacing at the start of divider
@@ -711,7 +711,7 @@ class _AppointmentPage extends State<AppointmentPage> {
 
                   Padding(padding: EdgeInsets.only(top: 20)),
                   Divider(
-                    color: Color(0x496bcde6), //color of divider
+                    color: Color(0xdd225c88), //color of divider
                     height: 5, //height spacing of divider
                     thickness: 3, //thickness of divier line
                     indent: 25, //spacing at the start of divider
@@ -767,7 +767,7 @@ class _AppointmentPage extends State<AppointmentPage> {
 /////////////////////////////////////////////////////////////////////////////////
                   Padding(padding: EdgeInsets.only(top: 20)),
                   Divider(
-                    color: Color(0x496bcde6), //color of divider
+                    color: Color(0xdd225c88), //color of divider
                     height: 5, //height spacing of divider
                     thickness: 3, //thickness of divier line
                     indent: 25, //spacing at the start of divider
