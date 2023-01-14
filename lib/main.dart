@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:rhb/utils/functions.dart';
 import 'start_camera.dart';
+import 'appointment.dart';
+import 'completed.dart';
 import 'package:camera/camera.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
@@ -15,10 +17,12 @@ void main() async {
 
   runApp(
     MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: const MainBar(),
       routes: {
         '/start_camera': (context) => StartCamera(camera: firstCamera),
+        '/appointment': (context) => AppointmentPage(),
+        '/completed': (context) => Completedpage()
       },
     ),
   );
@@ -115,7 +119,19 @@ class _MainBarState extends State<MainBar> {
                 ),
               ],
             ),
-            const Icon(Icons.directions_transit),
+            Column(
+              children: [
+                Container(
+                  child: Text('hi'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/appointment');
+                  },
+                  child: Text("Book Appointment"),
+                )
+              ],
+            )
           ],
         ),
       ),

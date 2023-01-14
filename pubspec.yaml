@@ -43,6 +43,13 @@ dependencies:
   file_picker: ^5.2.5
   snackbar: ^1.0.1
   awesome_snackbar_content: ^0.1.0
+  calendar_date_picker2: ^0.3.6
+  date_picker_timeline: ^1.2.3
+  day_night_time_picker: ^1.1.5
+  swipeable_button_view: ^0.0.2
+  page_transition: ^2.0.9
+  drop_down_list: ^0.0.4
+  flutter_dropdown_search: ^0.0.2
 
 dev_dependencies:
   flutter_test:
