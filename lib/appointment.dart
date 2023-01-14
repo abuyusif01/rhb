@@ -140,7 +140,9 @@ class _AppointmentPage extends State<AppointmentPage> {
     // Replace return Text(...); with return YourWidget(...);
 
     return Scaffold(
-        appBar: AppBar(title: const Text('Online Booking')),
+        appBar: AppBar(
+            backgroundColor: Color(0xdd225c88),
+            title: const Text('Online Booking')),
         body: Container(
             decoration: BoxDecoration(
               color: Colors.white,

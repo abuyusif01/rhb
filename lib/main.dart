@@ -18,7 +18,14 @@ void main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
+      theme: ThemeData(
+        // Define the default brightness and colors.
+        brightness: Brightness.light,
+        primaryColor: Color(0xFF6BCDE6),
+
+        // Define the default font family.
+        fontFamily: 'Georgia',
+      ),
       home: const MainBar(),
       routes: {
         '/start_camera': (context) => StartCamera(camera: firstCamera),
@@ -43,6 +50,7 @@ class _MainBarState extends State<MainBar> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xFF6BCDE6),
           bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.camera)),
@@ -53,6 +61,9 @@ class _MainBarState extends State<MainBar> {
         body: TabBarView(
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment
+                  .center, //main axis the vertical axis in a column so this positions the children at the center of the vertical axis
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Center(
                   child: ElevatedButton(
@@ -120,10 +131,14 @@ class _MainBarState extends State<MainBar> {
                 ),
               ],
             ),
-            Column(
+            Center(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment
+                  .center, //main axis the vertical axis in a column so this positions the children at the center of the vertical axis
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  child: Text('hi'),
+                  child: Text('RHB Online Appointment Booking'),
                 ),
                 ElevatedButton(
                   onPressed: () {
@@ -132,7 +147,7 @@ class _MainBarState extends State<MainBar> {
                   child: Text("Book Appointment"),
                 )
               ],
-            )
+            ))
           ],
         ),
       ),
