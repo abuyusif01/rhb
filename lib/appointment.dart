@@ -738,7 +738,8 @@ class _AppointmentPage extends State<AppointmentPage> {
                                         SizedBox(
                                             width: 328,
                                             height: 32,
-                                            child: Text("Select Branch",
+                                            child: Text(
+                                                "Select Preferred Branch",
                                                 style: TextStyle(
                                                   color: Color(0xdd225c88),
                                                   fontSize: 20,

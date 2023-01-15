@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-var url = 'http://159.223.93.146:8000/upload';
+var url = 'http://127.0.0.1:5000/upload';
 upload(url, filepath) async {
   try {
     var request = http.MultipartRequest('POST', Uri.parse(url));
