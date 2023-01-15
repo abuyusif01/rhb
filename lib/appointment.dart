@@ -130,6 +130,7 @@ class _AppointmentPage extends State<AppointmentPage> {
     "Utropolis Mall Glenmarie",
     "Vertical, Bangsar South"
   ];
+
   String fullName = '';
   String email = '';
   String phone = '';
@@ -751,8 +752,8 @@ class _AppointmentPage extends State<AppointmentPage> {
                     decoration:
                         BoxDecoration(border: Border.all(color: Colors.white)),
                   ),
-                  Container(
-                    width: 360,
+                  SizedBox(
+                    width: 100,
                     child: FlutterDropdownSearch(
                       hintText: "RHB Branch",
                       textFieldBorder: OutlineInputBorder(
@@ -908,7 +909,7 @@ class _AppointmentPage extends State<AppointmentPage> {
                       },
                     ),
                   ),
-                  Padding(padding: EdgeInsets.only(top: 20))
+                  Padding(padding: EdgeInsets.only(top: 20, bottom: 30))
                 ],
               )
             ])));

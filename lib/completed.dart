@@ -44,7 +44,7 @@ class Completedpage extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, '/');
                   },
-                  icon: Icon(Icons.home_outlined),
+                  icon: Icon(Icons.home_filled),
                   label: Text("Home"))
             ])));
   }
